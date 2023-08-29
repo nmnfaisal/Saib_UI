@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/saib_ui/saib_ui.iml" filepath="$PROJECT_DIR$/saib_ui/saib_ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/saib_ui/android/saib_ui_android.iml" filepath="$PROJECT_DIR$/saib_ui/android/saib_ui_android.iml" />
     </modules>
   </component>
 </project>
