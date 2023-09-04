@@ -37,6 +37,23 @@ class _MyLoginState extends State<MyLogin> {
               ),
             ),
             Positioned(
+              top: 0, // Center vertically
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 130.0,
+                width: double.infinity, // Code to assign full width
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/map_dots.png'),
+                      fit: BoxFit.fill
+                  ),
+                  shape: BoxShape.rectangle,
+                ),
+              ),
+            ),
+            Positioned(
               top: MediaQuery.of(context).size.height / 4 - 100, // Center vertically
               left: 100,
               child: Container(

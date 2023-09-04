@@ -7,39 +7,6 @@ class MyLanding extends StatefulWidget {
   State<MyLanding> createState() => _MyLandingState();
 }
 
-// class _MyLandingState extends State<MyLanding> {
-//   @override
-//   Widget build(BuildContext context) {
-//     Build_Jahaaz();
-//
-//
-//     return Container();
-//   }
-//
-//
-//
-//   Widget Build_Jahaaz() {
-//     return SizedBox(
-//       height: 20,
-//       child: Row(
-//         children: [
-//           Theme(
-//               data: ThemeData(unselectedWidgetColor: Colors.white),
-//               child: Container(
-//                 height: 130.0,
-//                 width: double.infinity, // Code to assign full width
-//                 decoration: const BoxDecoration(
-//                   image: DecorationImage(
-//                       image: AssetImage('assets/line.png'), fit: BoxFit.fill),
-//                   shape: BoxShape.rectangle,
-//                 ),
-//               ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
 class _MyLandingState extends State<MyLanding> {
   bool value = false;
 
@@ -65,6 +32,23 @@ class _MyLandingState extends State<MyLanding> {
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('assets/line.png'), fit: BoxFit.fill),
+                  shape: BoxShape.rectangle,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 0, // Center vertically
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 130.0,
+                width: double.infinity, // Code to assign full width
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/map_dots.png'),
+                      fit: BoxFit.fill
+                  ),
                   shape: BoxShape.rectangle,
                 ),
               ),
