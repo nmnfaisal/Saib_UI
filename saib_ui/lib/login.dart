@@ -52,8 +52,7 @@ class _MyLoginState extends State<MyLogin> {
               ),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height / 2.5 -
-                  100, // Center vertically
+              top: MediaQuery.of(context).size.height / 2.5 - 100, // Center vertically
               left: 80,
               right: 80,
 
@@ -109,7 +108,7 @@ class _MyLoginState extends State<MyLogin> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.yellow,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(30.0),
                         ),
                         padding:
                             EdgeInsets.symmetric(horizontal: 40, vertical: 15),

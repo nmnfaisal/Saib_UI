@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyLanding extends StatefulWidget {
@@ -71,7 +70,8 @@ class _MyLandingState extends State<MyLanding> {
               ),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height / 4 - 100, // Center vertically
+              top: MediaQuery.of(context).size.height / 4 -
+                  100, // Center vertically
               left: 100,
               child: Container(
                 height: 70,
@@ -103,119 +103,9 @@ class _MyLandingState extends State<MyLanding> {
                 ),
               ),
             ),
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(35.0),
-                    // Adjust the padding values as needed
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/ic_aboutus.png'),
-                          fit: BoxFit.fill,
-                        ),
-                        shape: BoxShape.rectangle,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(35.0),
-                    // Adjust the padding values as needed
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/ic_locator.png'),
-                          fit: BoxFit.fill,
-                        ),
-                        shape: BoxShape.rectangle,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(35.0),
-                    // Adjust the padding values as needed
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/ic_phone.png'),
-                          fit: BoxFit.fill,
-                        ),
-                        shape: BoxShape.rectangle,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(35.0),
-                    // Adjust the padding values as needed
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/ic_aboutus.png'),
-                          fit: BoxFit.fill,
-                        ),
-                        shape: BoxShape.rectangle,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(35.0),
-                    // Adjust the padding values as needed
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/ic_locator.png'),
-                          fit: BoxFit.fill,
-                        ),
-                        shape: BoxShape.rectangle,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(35.0),
-                    // Adjust the padding values as needed
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/ic_phone.png'),
-                          fit: BoxFit.fill,
-                        ),
-                        shape: BoxShape.rectangle,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
+            // Positioned(
+            //     child: iconsBar()
+            // ),
             Container(
               padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.height * 0.4,
@@ -223,16 +113,15 @@ class _MyLandingState extends State<MyLanding> {
                   left: 35),
               child: Column(
                 children: [
-
-                  const Row(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.all(16.0),
-                        // Adjust the padding values as needed
-                        // child: buildRememberassword(),
-                      ),
-                    ],
+                  const Text(
+                    "Welcome Habibi...",
+                    style: TextStyle(
+                        fontSize: 17.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
                   ),
+
+                  iconsBar(),
 
                   Padding(
                     padding: EdgeInsets.all(20.0),
@@ -244,18 +133,17 @@ class _MyLandingState extends State<MyLanding> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.yellow,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(30.0),
                         ),
                         padding:
-                        EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                            EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                       ),
                       child: const Text(
-                        '   Login  ',
+                        '      Login     ',
                         style: TextStyle(fontSize: 18, color: Colors.black),
                       ),
                     ),
                   ),
-
                   Padding(
                     padding: EdgeInsets.all(0.0),
                     // Adjust the padding values as needed
@@ -266,13 +154,13 @@ class _MyLandingState extends State<MyLanding> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.yellow,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(30.0),
                         ),
                         padding:
-                        EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                            EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                       ),
                       child: const Text(
-                        'Register',
+                        '   Register   ',
                         style: TextStyle(fontSize: 18, color: Colors.black),
                       ),
                     ),
@@ -286,28 +174,78 @@ class _MyLandingState extends State<MyLanding> {
     );
   }
 
-  Widget buildRememberassword() {
-    return Container(
-      height: 20,
-      child: Row(
-        children: [
-          Theme(
-              data: ThemeData(unselectedWidgetColor: Colors.white),
-              child: Checkbox(
-                value: false,
-                checkColor: Colors.blueGrey,
-                activeColor: Colors.white,
-                onChanged: (value) {
-                  setState(() {
-                    // rememberpwd=value;
-                  });
-                },
-              )),
-          const Text(
-            "Remember me",
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+  Widget iconsBar() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(20.0),
+          // Adjust the padding values as needed
+          child: Container(
+            height: 50,
+            width: 50,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/icons/ic_aboutus.png'),
+                fit: BoxFit.fill,
+              ),
+              shape: BoxShape.rectangle,
+            ),
           ),
-        ],
+        ),
+        Padding(
+          padding: const EdgeInsets.all(20.0),
+          // Adjust the padding values as needed
+          child: Container(
+            height: 50,
+            width: 50,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/icons/ic_locator.png'),
+                fit: BoxFit.fill,
+              ),
+              shape: BoxShape.rectangle,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(20.0),
+          // Adjust the padding values as needed
+          child: Container(
+            height: 50,
+            width: 50,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/icons/ic_phone.png'),
+                fit: BoxFit.fill,
+              ),
+              shape: BoxShape.rectangle,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget costomiseButton(buttonText, backGroundColor) {
+    return SizedBox(
+      height: 20,
+      child: ElevatedButton(
+        onPressed: () {
+          // Perform login logic here
+        },
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.yellow,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+        ),
+        child: const Text(
+          'Login',
+          style: TextStyle(fontSize: 18, color: Colors.black),
+        ),
       ),
     );
   }
