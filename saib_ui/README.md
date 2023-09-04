@@ -1,4 +1,6 @@
-# saib_ui
+# Saib_UI
+login screen + landing screen
 
-Login Screen + Landing Screen
-
+# Screenshots
+![image](https://github.com/nmnfaisal/Saib_UI/blob/master/saib_ui/screenShots/landing.png)
+![image](https://github.com/nmnfaisal/Saib_UI/blob/master/saib_ui/screenShots/login.png)
